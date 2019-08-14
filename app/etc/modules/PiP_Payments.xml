@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <PiP_PiPPayments>
+      <active>true</active>
+      <codePool>community</codePool>
+
+      <depends>
+        <Mage_Payment />
+      </depends>
+    </PiP_PiPPayments>
+  </modules>
+</config>

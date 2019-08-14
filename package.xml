@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package>
+    <name>PiPPayments</name>
+    <version>0.1.0.3</version>
+    <stability>stable</stability>
+    <license>GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Now you can accept cash payments for sales on your website. No cards or accounts required. Customers simply order online and pay offline.</summary>
+    <description>Now you can accept cash payments for sales on your website. Customers don&#x2019;t need cards or accounts to shop with you, they simply order online and pay offline through our network of secure payment locations e.g. Post Offices.&#xD;
+PiP opens up the world of eCommerce to the millions of unbanked and underbanked people who would love to shop online but can&#x2019;t.  PiP also offers a safe, secure and straightforward way for people who have security or privacy concerns - and don&#x2019;t want to risk their card details online - to shop with you.&#xD;
+Integrating PiP with your website is a simple process.  Within half an hour your website could be open to millions more customers and you could be selling to a market that is currently -  and unnecessarily - underserved and excluded.&#xD;
+PiP is available to customers in the UK with payments being made through 11,500 UK Post Offices, and will be available in Ireland in the coming months and further afield in 2016.&#xD;
+</description>
+    <notes>Module updated to include:-&#xD;
+&#xD;
+1) Logo and Information Link&#xD;
+2) Simplify Configuration&#xD;
+3) Sort Order configuration option</notes>
+    <authors><author><name>PiPPayments</name><user>JulescalPiP</user><email>julian.callaghan@pippayments.com</email></author></authors>
+    <date>2016-02-22</date>
+    <time>09:54:07</time>
+    <contents><target name="magecommunity"><dir name="PiP"><dir name="PiPPayments"><dir name="Helper"><file name="Data.php" hash="20977906ff9391d969d3e9434872039c"/></dir><dir name="Model"><file name="Standard.php" hash="7f4fd9c7f1a92172db4b9c54f071d2fc"/></dir><dir name="controllers"><file name="PaymentController.php" hash="a730425053f50269b5dbe3a474359304"/></dir><dir name="etc"><file name="config.xml" hash="143c1ec746046076ee53825c9887df67"/><file name="system.xml" hash="5ef9a8576da63b04082c9f8363ab3519"/></dir></dir></dir></target><target name="magemedia"><dir name="."><file name="pip.png" hash="cd6726b2175401622d34a3c7ce427fd1"/></dir></target><target name="mageetc"><dir name="modules"><file name="PiP_Payments.xml" hash="f9dc70aac5c9ecda6f076256826bbc8e"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="checkout"><dir name="onepage"><dir name="payment"><file name="methods.phtml" hash="32751cf70bdf624b050311082ae6ca68"/></dir></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.4.0</min><max>6.0.0</max></php><package><name>Mage_Core_Modules</name><channel>community</channel><min>1.9.0</min><max>1.9.999</max></package></required></dependencies>
+</package>

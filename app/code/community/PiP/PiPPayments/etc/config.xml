@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <PiP_PiPPayments>
+      <version>0.1.0.3</version>
+    </PiP_PiPPayments>
+  </modules>
+
+  <global>
+    <fieldsets>
+      <sales_convert_quote_payment>
+        <pip_status>
+          <to_order_payment>*</to_order_payment>
+        </pip_status>
+        <pip_barcode>
+          <to_order_payment>*</to_order_payment>
+        </pip_barcode>
+      </sales_convert_quote_payment>
+    </fieldsets>
+
+    <helpers>
+      <pippayments>
+        <class>PiP_PiPPayments_Helper</class>
+      </pippayments>
+    </helpers>
+
+    <blocks>
+      <pippayments>
+        <class>PiP_PiPPayments_Block</class>
+      </pippayments>
+    </blocks>
+
+    <models>
+      <pippayments>
+        <class>PiP_PiPPayments_Model</class>
+      </pippayments>
+    </models>
+
+
+  </global>
+
+  <default>
+    <payment>
+      <pippayments>
+        <active>1</active>
+        <model>pippayments/standard</model>
+        <order_status>pending</order_status>
+        <title>PiP Payments</title>
+        <allowspecific>0</allowspecific>
+        <payment_action>sale</payment_action>
+      </pippayments>
+    </payment>
+  </default>
+
+  <frontend>
+    <routers>
+      <pippayments>
+        <use>standard</use>
+        <args>
+          <module>PiP_PiPPayments</module>
+          <frontName>pippayments</frontName>
+        </args>
+      </pippayments>
+    </routers>
+  </frontend>
+</config>
