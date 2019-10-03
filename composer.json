@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/PiPPayments",
+    "name": "OpenMageModuleFostering\/PiPPayments",
     "type": "magento-module",
     "license": "GPL",
     "homepage": "",
     "description": "Now you can accept cash payments for sales on your website. No cards or accounts required. Customers simply order online and pay offline.",
     "authors": [
-    {
-        "name": "PiPPayments",
-        "email": "julian.callaghan@pippayments.com"
-    }
-],
+        {
+            "name": "PiPPayments",
+            "email": "julian.callaghan@pippayments.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
